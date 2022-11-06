@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home page</title>
+    </head>
+    <body>
+		<a href = "/a1/">Home</a><br>
+        <a href = "/a1/highest_rank_pages">The 25 highest rank fruit pages</a><br>               
+        <p>Enter a text to query</p>
+        <input type="text" id="text_query" value=""><br>
+        <form>
+            <input type="radio" name="type" Id="fruit" checked="true"> Search from fruit pages   <input type="radio" name="type" Id="personal"> Search from personal selected pages<br>
+        </form>
+        <form>
+            Using PageRank score: <input type="radio" name="PageRank_bool" Id="yes" checked="true">Yes <input type="radio" name="PageRank_bool" Id="no">No<br>
+        </form>
+        Number of result (min 1, max 50): <input type="text" id = "result_number" value="10"><br>
+        <button type="button" onclick = "text_query()">Query</button><br>
+
+        <script src="/a1/homePage.js"></script>  
+    </body>
+</html>
